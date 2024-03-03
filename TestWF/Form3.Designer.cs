@@ -28,33 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            splitContainer1 = new SplitContainer();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // splitContainer1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(339, 189);
-            label1.Name = "label1";
-            label1.Size = new Size(88, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Генерация ";
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            splitContainer1.Size = new Size(800, 450);
+            splitContainer1.SplitterDistance = 266;
+            splitContainer1.TabIndex = 0;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(splitContainer1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form3";
             Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private SplitContainer splitContainer1;
     }
 }

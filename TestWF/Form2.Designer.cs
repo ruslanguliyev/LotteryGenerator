@@ -32,12 +32,12 @@
             btnAdd = new Button();
             label1 = new Label();
             txtNumber = new TextBox();
-            dgwTicket = new DataGridView();
+            DGVTicket = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgwTicket).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVTicket).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -54,9 +54,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(dgwTicket);
-            splitContainer1.Size = new Size(786, 525);
-            splitContainer1.SplitterDistance = 262;
+            splitContainer1.Panel2.Controls.Add(DGVTicket);
+            splitContainer1.Size = new Size(959, 525);
+            splitContainer1.SplitterDistance = 319;
             splitContainer1.TabIndex = 0;
             // 
             // btnAdd
@@ -88,41 +88,42 @@
             txtNumber.Size = new Size(237, 34);
             txtNumber.TabIndex = 0;
             // 
-            // dgwTicket
+            // DGVTicket
             // 
-            dgwTicket.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgwTicket.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgwTicket.Dock = DockStyle.Fill;
-            dgwTicket.Location = new Point(0, 0);
-            dgwTicket.Name = "dgwTicket";
-            dgwTicket.RowHeadersWidth = 51;
-            dgwTicket.RowTemplate.Height = 29;
-            dgwTicket.Size = new Size(520, 525);
-            dgwTicket.TabIndex = 0;
+            DGVTicket.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            DGVTicket.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVTicket.Dock = DockStyle.Fill;
+            DGVTicket.Location = new Point(0, 0);
+            DGVTicket.Name = "DGVTicket";
+            DGVTicket.RowHeadersWidth = 51;
+            DGVTicket.RowTemplate.Height = 29;
+            DGVTicket.Size = new Size(636, 525);
+            DGVTicket.TabIndex = 0;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(786, 525);
+            ClientSize = new Size(959, 525);
             Controls.Add(splitContainer1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
+            Load += Form2_Load;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgwTicket).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVTicket).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private SplitContainer splitContainer1;
-        private DataGridView dgwTicket;
+        private DataGridView DGVTicket;
         private Label label1;
         private TextBox txtNumber;
         private Button btnAdd;

@@ -42,54 +42,6 @@ namespace TestWF
 
 
 
-        //private void RestoreInitialLayout()
-        //{
-        //    pnlHome.Controls.AddRange(initialControls); // ƒобавл€ем обратно элементы начального состо€ни€
-        //}
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    if (form2Instance == null || form2Instance.IsDisposed)
-        //    {
-
-        //        form2Instance = new Form2();
-        //        form2Instance.FormClosed += (s, args) => { RestoreInitialLayout(); }; // ¬осстанавливаем начальное состо€ние pnlHome после закрыти€ формы form2Instance
-
-        //        LoadForm(form2Instance);
-
-        //    }
-        //    else
-        //    {
-
-        //        if (form2Instance != null && !form2Instance.IsDisposed)
-        //        {
-        //            form2Instance.Close();
-
-        //        }
-
-        //    }
-        //}
-
-        //private void button2_Click(object sender, EventArgs e)
-        //{
-        //    if (form3Instance == null || form3Instance.IsDisposed)
-        //    {
-
-        //        form3Instance = new Form3();
-        //        form3Instance.FormClosed += (s, args) => { RestoreInitialLayout(); }; // ¬осстанавливаем начальное состо€ние pnlHome после закрыти€ формы form2Instance
-        //        LoadForm(form3Instance);
-
-        //    }
-        //    else
-        //    {
-
-        //        if (form3Instance != null && !form3Instance.IsDisposed)
-        //        {
-        //            form3Instance.Close();
-
-        //        }
-
-        //    }
-        //}
+        
     }
 }

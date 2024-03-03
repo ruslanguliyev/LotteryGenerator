@@ -93,6 +93,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(pnlHome);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
