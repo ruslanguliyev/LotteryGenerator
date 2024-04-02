@@ -8,11 +8,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestWF", "TestWF\TestWF.csp
 		{7F084A38-7DC3-4CC4-AA4D-2F1C8F509560} = {7F084A38-7DC3-4CC4-AA4D-2F1C8F509560}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{729D92D5-6E00-4A17-86E1-FEFBB6276184}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{729D92D5-6E00-4A17-86E1-FEFBB6276184}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{7F084A38-7DC3-4CC4-AA4D-2F1C8F509560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{7F084A38-7DC3-4CC4-AA4D-2F1C8F509560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{C7EDD9E6-E689-4948-AB80-E7C59F4203A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{C7EDD9E6-E689-4948-AB80-E7C59F4203A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

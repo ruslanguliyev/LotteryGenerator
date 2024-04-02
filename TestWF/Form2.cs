@@ -1,5 +1,7 @@
 ﻿using Business;
+using DataAccess.Migrations;
 using Entities;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 using System;
 using System.Collections.Generic;
@@ -11,6 +13,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace TestWF
 {
@@ -20,7 +23,11 @@ namespace TestWF
         public Form2()
         {
             InitializeComponent();
+            //DGVTicket.DoubleClick += DGVTicket_DoubleClick;
+
         }
+
+
 
         public void FillDGV()
         {
@@ -29,6 +36,7 @@ namespace TestWF
                 {
                     ID = allTicket.Id,
                     Number = allTicket.Number,
+                    IsDeleted = allTicket.IsDeleted,
 
                 }).ToList();
 
@@ -59,8 +67,48 @@ namespace TestWF
                 FillDGV();
             }
         }
+        
+
+        
+
+        private void btnGen_Click(object sender, EventArgs e)
+        {
+            List<Ticket> existingTickets = _ticketmanager.GetAllTicketNumber("");
+
+            Random random = new Random();
+
+            string newTicketNumber;
+            do
+            {
+                
+                string baseNumber = existingTickets.Any() ? existingTickets[random.Next(existingTickets.Count)].Number : "";
+                int randomNumber = random.Next(100000000);
+                newTicketNumber = baseNumber + randomNumber.ToString();
+            } while (existingTickets.Any(ticket => ticket.Number == newTicketNumber)); 
+
+            MessageBox.Show(newTicketNumber);
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+
+            int ticketNumber = Convert.ToInt32(txt_Id.Text);
+
+            if (!int.TryParse(txt_Id.Text, out ticketNumber))
+            {
+                MessageBox.Show("Заполните поля");
+               
+            }
+            else
+            {
+                _ticketmanager.DeleteTicket(ticketNumber);
+                MessageBox.Show("Билет успешно удален.");
+                FillDGV();
+            }
 
 
+
+        }
 
 
     }

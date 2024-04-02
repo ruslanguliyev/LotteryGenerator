@@ -12,6 +12,7 @@ namespace TestWF
         {
             InitializeComponent();
             //initialControls = pnlHome.Controls.Cast<Control>().ToArray();
+            
 
         }
 
@@ -35,13 +36,10 @@ namespace TestWF
             LoadForm(new Form2());
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            LoadForm(new Form3());
-        }
-
-
-
         
+
+
+
+
     }
 }

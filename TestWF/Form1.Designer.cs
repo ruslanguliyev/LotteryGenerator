@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button2 = new Button();
             button1 = new Button();
             pnlHome = new Panel();
             label1 = new Label();
@@ -39,23 +38,12 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 450);
             panel1.TabIndex = 0;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(3, 125);
-            button2.Name = "button2";
-            button2.Size = new Size(241, 41);
-            button2.TabIndex = 1;
-            button2.Text = "Сгенерировать ";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -108,6 +96,5 @@
         private Panel pnlHome;
         private Button button1;
         private Label label1;
-        private Button button2;
     }
 }

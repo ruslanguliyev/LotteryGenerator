@@ -29,10 +29,13 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            btnDel = new Button();
+            btnGen = new Button();
             btnAdd = new Button();
             label1 = new Label();
             txtNumber = new TextBox();
             DGVTicket = new DataGridView();
+            txt_Id = new TextBox();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -48,6 +51,9 @@
             // 
             // splitContainer1.Panel1
             // 
+            splitContainer1.Panel1.Controls.Add(txt_Id);
+            splitContainer1.Panel1.Controls.Add(btnDel);
+            splitContainer1.Panel1.Controls.Add(btnGen);
             splitContainer1.Panel1.Controls.Add(btnAdd);
             splitContainer1.Panel1.Controls.Add(label1);
             splitContainer1.Panel1.Controls.Add(txtNumber);
@@ -58,6 +64,30 @@
             splitContainer1.Size = new Size(959, 525);
             splitContainer1.SplitterDistance = 319;
             splitContainer1.TabIndex = 0;
+            // 
+            // btnDel
+            // 
+            btnDel.BackColor = Color.Red;
+            btnDel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDel.ForeColor = SystemColors.Menu;
+            btnDel.Location = new Point(63, 338);
+            btnDel.Name = "btnDel";
+            btnDel.Size = new Size(136, 49);
+            btnDel.TabIndex = 4;
+            btnDel.Text = "Удалить";
+            btnDel.UseVisualStyleBackColor = false;
+            btnDel.Click += btnDel_Click;
+            // 
+            // btnGen
+            // 
+            btnGen.BackColor = SystemColors.ScrollBar;
+            btnGen.Location = new Point(63, 183);
+            btnGen.Name = "btnGen";
+            btnGen.Size = new Size(136, 49);
+            btnGen.TabIndex = 3;
+            btnGen.Text = "Сгенерировать ";
+            btnGen.UseVisualStyleBackColor = false;
+            btnGen.Click += btnGen_Click;
             // 
             // btnAdd
             // 
@@ -100,6 +130,14 @@
             DGVTicket.Size = new Size(636, 525);
             DGVTicket.TabIndex = 0;
             // 
+            // txt_Id
+            // 
+            txt_Id.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Id.Location = new Point(12, 298);
+            txt_Id.Name = "txt_Id";
+            txt_Id.Size = new Size(237, 34);
+            txt_Id.TabIndex = 5;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -127,5 +165,8 @@
         private Label label1;
         private TextBox txtNumber;
         private Button btnAdd;
+        private Button btnGen;
+        private Button btnDel;
+        private TextBox txt_Id;
     }
 }
